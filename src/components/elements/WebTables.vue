@@ -1,7 +1,7 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import BaseModal from './BaseModal.vue';
+import BaseModal from '../shared/BaseModal.vue';
 import { Modal } from 'bootstrap';
 
 const state = ref({
@@ -31,6 +31,7 @@ const state = ref({
 });
 
 onMounted(() => {
+	state.value.filteredUsers = state.value.users;
 	state.value.employeeModal = new Modal('#employee-modal', {});
 });
 
@@ -74,12 +75,30 @@ function updateEmployee(employee) {
 	state.value.userUpdating = employee;
 }
 
+function search(event) {
+	let searchValue = event.target.value.toLowerCase();
+	if (!searchValue || searchValue === '') return;
+
+	state.value.filteredUsers = state.value.users.filter((user) => {
+		if (user.firstName.toLowerCase().startsWith(searchValue) || user.lastName.toLowerCase().startsWith(searchValue) ||
+			user.age.toLowerCase().startsWith(searchValue) || user.email.toLowerCase().startsWith(searchValue) || 
+			user.salary.toString().startsWith(searchValue) || user.department.toLowerCase().startsWith(searchValue)) return user;
+	});
+}
+
 </script>
 
 <template>
-	<!-- <AddEmployeeModal /> -->
 	<div class="d-flex justify-content-between">
-		<button type="button" class="btn btn-dark" @click="openModal">Add</button>
+		<div class="d-flex justify-content-between w-100">
+			<div class="input-group">
+				<button type="button" class="btn btn-dark" @click="openModal">Add</button>
+			</div>
+			<div class="input-group w-50">
+				<input @keyup="search($event)" type="text" class="form-control" placeholder="Type to search" aria-label="Type to search" aria-describedby="button-addon2">
+				<button class="btn btn-outline-dark" type="button" id="button-addon2"><FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /></button>
+			</div>
+		</div>
 		<BaseModal id="employee-modal" :close-modal="closeModal">
 			<template #title>
 				<span v-if="state.user.firstName && state.user.lastName && state.user.age && state.user.email && state.user.salary && state.user.department">Editing {{ state.user.firstName }}</span>
@@ -144,7 +163,7 @@ function updateEmployee(employee) {
 				<th scope="col">Action</th>
 			</tr>
 		</thead>
-		<tbody v-for="user in state.users" :key="user.id">
+		<tbody v-for="user in state.filteredUsers" :key="user.id">
 			<tr>
 				<th scope="row">{{ user.id }}</th>
 				<td>{{ user.firstName }}</td>

@@ -1,25 +1,4 @@
-<script setup>
-import { ref } from 'vue';
-
-const navLinks = ref({
-	elements: false,
-	basicForm: false,
-	formValidation: false,
-	popup: false,
-});
-
-const setActiveLink = (selectedLink, linkParent = null) => {
-	Object.keys(navLinks.value).forEach(navLink => {
-		navLinks.value[navLink] = false;
-	});
-    
-	navLinks.value[selectedLink] = true;
-
-	if (linkParent) {
-		navLinks.value[linkParent] = true;
-	}
-};
-</script>
+<script setup></script>
 
 <template>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
@@ -30,21 +9,14 @@ const setActiveLink = (selectedLink, linkParent = null) => {
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ms-auto pe-3">
-					<li class="nav-item">
-						<!-- <a class="nav-link active" aria-current="page" href="/">Home</a> -->
-					</li>
-					<!-- <li class="nav-item">
-						<a class="nav-link" href="#/elements">Elements</a>
-						</li> -->
 					<li class="nav-item dropdown">
-						<a :class="['nav-link', 'dropdown-toggle', { 'active': navLinks.elements }]" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Elements
 						</a>
 						<ul class="dropdown-menu">
-							<li><a :class="['dropdown-item', { 'active': navLinks.basicForm }]" href="#/elements/basic-form" @click="setActiveLink('basicForm', 'elements')">Basic Form</a></li>
+							<li><a class="dropdown-item" href="#/elements/basic-form">Basic Form</a></li>
 							<li><a class="dropdown-item" href="#">Tree Browser</a></li>
-							<!-- <li><hr class="dropdown-divider"></li> -->
-							<li><a class="dropdown-item" href="#/elements/radio-buttons">Radio Buttons</a></li>
+							<li><a class="dropdown-item" href="#/elements/radio-buttons">Radio Button</a></li>
 							<li><a class="dropdown-item" href="#/elements/web-tables">Web Tables</a></li>
 							<li><a class="dropdown-item" href="#">Buttons</a></li>
 							<li><a class="dropdown-item" href="#">Links</a></li>
@@ -54,10 +26,10 @@ const setActiveLink = (selectedLink, linkParent = null) => {
 						</ul>
 					</li>
 					<li class="nav-item">
-						<a :class="['nav-link', { 'active' : navLinks.formValidation }]" href="#/forms" @click="setActiveLink('formValidation')">Form Validation</a>
+						<a class="nav-link" href="#/forms">Form Validation</a>
 					</li>
 					<li class="nav-item">
-						<a :class="['nav-link', { 'active' : navLinks.popup }]" href="#/popup" @click="setActiveLink('popup')">Popup Windows</a>
+						<a class="nav-link" href="#/popup">Popup Windows</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#/widgets">Widgets</a>
@@ -75,5 +47,7 @@ const setActiveLink = (selectedLink, linkParent = null) => {
 </template>
 
 <style scoped>
-.dropdown:hover .dropdown-menu { display: block; }
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
 </style>

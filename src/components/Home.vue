@@ -15,7 +15,7 @@
 				<div class="card-body">
 					<h5 class="card-title">Elements</h5>
 					<p class="card-text">Basic HTML elements.</p>
-					<a href="#/elements" class="btn btn-dark">Practice</a>
+					<a href="#/elements/basic-form" class="btn btn-dark">Practice</a>
 				</div>
 			</div>
 		</div>
