@@ -44,8 +44,8 @@ const setActiveLink = (selectedLink, linkParent = null) => {
 							<li><a :class="['dropdown-item', { 'active': navLinks.basicForm }]" href="#/elements/basic-form" @click="setActiveLink('basicForm', 'elements')">Basic Form</a></li>
 							<li><a class="dropdown-item" href="#">Tree Browser</a></li>
 							<!-- <li><hr class="dropdown-divider"></li> -->
-							<li><a class="dropdown-item" href="#">Radio Button</a></li>
-							<li><a class="dropdown-item" href="#">Web Tables</a></li>
+							<li><a class="dropdown-item" href="#/elements/radio-buttons">Radio Buttons</a></li>
+							<li><a class="dropdown-item" href="#/elements/web-tables">Web Tables</a></li>
 							<li><a class="dropdown-item" href="#">Buttons</a></li>
 							<li><a class="dropdown-item" href="#">Links</a></li>
 							<li><a class="dropdown-item" href="#">Broken Links - Images</a></li>

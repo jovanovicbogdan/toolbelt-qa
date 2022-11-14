@@ -25,7 +25,7 @@ function toggleSubmitted() {
 </script>
 
 <template>
-	<h2>Enter First Name and Last Name and Get the Full Name as a Result</h2>
+	<p>Enter first name and last name and get the full name as a result.</p>
 	<form @submit.prevent="onSubmit" class="mt-5 mb-5">
 		<div class="mb-3">
 			<label for="first-name" class="form-label">First Name</label>

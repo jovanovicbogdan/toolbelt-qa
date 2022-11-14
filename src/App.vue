@@ -5,10 +5,14 @@ import Home from './components/Home.vue';
 import NotFound from './components/NotFound.vue';
 import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
+import RadioButtons from './components/elements/RadioButtons.vue';
+import WebTables from './components/elements/WebTables.vue';
 
 const routes = {
 	'/': Home,
 	'/elements/basic-form': BasicForm,
+	'/elements/radio-buttons': RadioButtons,
+	'/elements/web-tables': WebTables,
 };
 
 const currentPath = ref(window.location.hash);
