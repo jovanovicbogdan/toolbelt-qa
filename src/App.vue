@@ -29,7 +29,7 @@ const currentView = computed(() => {
 
 <template>
 	<Header />
-	<main class="container flex-shrink-0">
+	<main class="container flex-shrink-0" style="height: 80vh;">
 		<component :is="currentView" />
 	</main>
 	<Footer />
