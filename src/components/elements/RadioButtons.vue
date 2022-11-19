@@ -20,7 +20,7 @@ const selectedValue = ref('');
 		</div>
 	</div>
 	<div v-if="selectedValue" class="alert alert-success d-flex space-between mt-5" role="alert">
-		You have selected: <strong class="text-primary">{{ selectedValue }}</strong>
+		<p>You have selected: <strong class="text-primary">{{ selectedValue }}</strong></p>
 	</div>
 
 </template>

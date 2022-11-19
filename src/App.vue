@@ -7,12 +7,18 @@ import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
 import RadioButtons from './components/elements/RadioButtons.vue';
 import WebTables from './components/elements/WebTables.vue';
+import Buttons from './components/elements/Buttons.vue';
+import BrokenLinks from './components/elements/BrokenLinks.vue';
+import UploadAndDownload from './components/elements/UploadAndDownload.vue';
 
 const routes = {
 	'/': Home,
 	'/elements/basic-form': BasicForm,
 	'/elements/radio-buttons': RadioButtons,
 	'/elements/web-tables': WebTables,
+	'/elements/buttons': Buttons,
+	'/elements/broken-links': BrokenLinks,
+	'/elements/data-transfer': UploadAndDownload,
 };
 
 const currentPath = ref(window.location.hash);

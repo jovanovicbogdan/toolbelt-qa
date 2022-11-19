@@ -13,7 +13,7 @@
 		<div class="col-sm-4">
 			<div class="card">
 				<div class="card-body">
-					<h5 class="card-title">Elements</h5>
+					<h5 class="card-title">HTML Elements</h5>
 					<p class="card-text">Basic HTML elements.</p>
 					<a href="#/elements/basic-form" class="btn btn-dark">Practice</a>
 				</div>

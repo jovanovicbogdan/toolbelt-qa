@@ -66,51 +66,6 @@ const state = ref({
 			salary: 6000,
 			department: 'Human Resources',
 		},
-		{
-			id: 7,
-			firstName: 'Tracey',
-			lastName: 'Ramos',
-			age: '26',
-			email: 'tracey@gmail.com',
-			salary: 6000,
-			department: 'Human Resources',
-		},
-		{
-			id: 8,
-			firstName: 'Tracey',
-			lastName: 'Ramos',
-			age: '26',
-			email: 'tracey@gmail.com',
-			salary: 6000,
-			department: 'Human Resources',
-		},
-		{
-			id: 9,
-			firstName: 'Tracey',
-			lastName: 'Ramos',
-			age: '26',
-			email: 'tracey@gmail.com',
-			salary: 6000,
-			department: 'Human Resources',
-		},
-		{
-			id: 10,
-			firstName: 'Tracey',
-			lastName: 'Ramos',
-			age: '26',
-			email: 'tracey@gmail.com',
-			salary: 6000,
-			department: 'Human Resources',
-		},
-		{
-			id: 11,
-			firstName: 'Tracey',
-			lastName: 'Ramos',
-			age: '26',
-			email: 'tracey@gmail.com',
-			salary: 6000,
-			department: 'Human Resources',
-		},
 	],
 });
 
@@ -185,8 +140,8 @@ function selectRows() {
 function nextPage() {
 	const from = state.value.defaultSelectedRows * state.value.currentPage;
 	const to = from + state.value.defaultSelectedRows;
+	if (state.value.users.slice(from, to).length === 0) return;
 	state.value.filteredUsers = state.value.users.slice(from, to);
-	if (state.value.filteredUsers.length === 0) return;
 	state.value.currentPage++;
 }
 

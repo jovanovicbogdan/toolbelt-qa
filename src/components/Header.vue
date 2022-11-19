@@ -11,18 +11,17 @@
 				<ul class="navbar-nav ms-auto pe-3">
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Elements
+							HTML Elements
 						</a>
 						<ul class="dropdown-menu">
 							<li><a class="dropdown-item" href="#/elements/basic-form">Basic Form</a></li>
 							<li><a class="dropdown-item" href="#">Tree Browser</a></li>
 							<li><a class="dropdown-item" href="#/elements/radio-buttons">Radio Button</a></li>
 							<li><a class="dropdown-item" href="#/elements/web-tables">Web Tables</a></li>
-							<li><a class="dropdown-item" href="#">Buttons</a></li>
-							<li><a class="dropdown-item" href="#">Links</a></li>
-							<li><a class="dropdown-item" href="#">Broken Links - Images</a></li>
-							<li><a class="dropdown-item" href="#">Upload and Download</a></li>
-							<li><a class="dropdown-item" href="#">Dynamic Properties</a></li>
+							<li><a class="dropdown-item" href="#/elements/buttons">Button Interactions</a></li>
+							<li><a class="dropdown-item" href="#/elements/broken-links">Broken Images and Links</a></li>
+							<li><a class="dropdown-item" href="#/elements/data-transfer">Upload and Download</a></li>
+							<li><a class="dropdown-item" href="#">Events &amp; AJAX</a></li>
 						</ul>
 					</li>
 					<li class="nav-item">
