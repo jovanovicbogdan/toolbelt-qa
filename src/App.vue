@@ -10,6 +10,7 @@ import WebTables from './components/elements/WebTables.vue';
 import Buttons from './components/elements/Buttons.vue';
 import BrokenLinks from './components/elements/BrokenLinks.vue';
 import UploadAndDownload from './components/elements/UploadAndDownload.vue';
+import EventsAndAjax from './components/elements/EventsAndAjax.vue';
 
 const routes = {
 	'/': Home,
@@ -19,6 +20,7 @@ const routes = {
 	'/elements/buttons': Buttons,
 	'/elements/broken-links': BrokenLinks,
 	'/elements/data-transfer': UploadAndDownload,
+	'/elements/events-and-ajax': EventsAndAjax,
 };
 
 const currentPath = ref(window.location.hash);

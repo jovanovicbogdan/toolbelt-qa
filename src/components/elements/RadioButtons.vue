@@ -5,7 +5,8 @@ const selectedValue = ref('');
 </script>
 
 <template>
-	<div class="d-flex flex-row justify-content-around border">
+	<h1>Radio Buttons</h1>
+	<div class="d-flex flex-row justify-content-around border mt-5">
 		<div>
 			<input v-model="selectedValue" type="radio" name="radio" id="yes" value="Yes" />
 			<label for="yes" class="p-2">Yes</label>

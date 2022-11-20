@@ -3,7 +3,7 @@
 <template>
 	<h1>Broken Images and Links</h1>
 
-	<div class="row">
+	<div class="row mt-5">
 		<div class="col">
 			<img src="../../assets/rickroll.jpg" class="img-thumbnail" width="200" height="200" />
 		</div>

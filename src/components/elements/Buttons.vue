@@ -26,7 +26,7 @@ function click() {
 
 <template>
 	<h1>Basic Button Interactions</h1>
-	<div class="d-flex flex-column gap-3">
+	<div class="d-flex flex-column gap-3 mt-5">
 		<button class="btn btn-dark" @dblclick="doubleClick">Perform Double Click</button>
 		<button class="btn btn-dark" @contextmenu="rightClick($event)">Perform Right Click</button>
 		<button class="btn btn-dark" @click="click">Perform Click</button>

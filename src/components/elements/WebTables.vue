@@ -156,7 +156,8 @@ function prevPage() {
 
 </script>
 
-<template>	
+<template>
+	<h1 class="mb-5">HTML Web Tables</h1>
 	<BaseModal id="employee-modal" :close-modal="closeModal">
 		<template #title>
 			<span v-if="state.user.firstName && state.user.lastName && state.user.age && state.user.email && state.user.salary && state.user.department">Editing {{ state.user.firstName }}</span>

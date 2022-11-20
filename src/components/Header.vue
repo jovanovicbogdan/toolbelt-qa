@@ -21,7 +21,7 @@
 							<li><a class="dropdown-item" href="#/elements/buttons">Button Interactions</a></li>
 							<li><a class="dropdown-item" href="#/elements/broken-links">Broken Images and Links</a></li>
 							<li><a class="dropdown-item" href="#/elements/data-transfer">Upload and Download</a></li>
-							<li><a class="dropdown-item" href="#">Events &amp; AJAX</a></li>
+							<li><a class="dropdown-item" href="#/elements/events-and-ajax">Events &amp; AJAX</a></li>
 						</ul>
 					</li>
 					<li class="nav-item">
