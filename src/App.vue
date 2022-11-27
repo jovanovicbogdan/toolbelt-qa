@@ -11,6 +11,7 @@ import Buttons from './components/elements/Buttons.vue';
 import BrokenLinks from './components/elements/BrokenLinks.vue';
 import UploadAndDownload from './components/elements/UploadAndDownload.vue';
 import EventsAndAjax from './components/elements/EventsAndAjax.vue';
+import ValidationForm from './components/ValidationForm.vue';
 
 const routes = {
 	'/': Home,
@@ -21,6 +22,7 @@ const routes = {
 	'/elements/broken-links': BrokenLinks,
 	'/elements/data-transfer': UploadAndDownload,
 	'/elements/events-and-ajax': EventsAndAjax,
+	'/forms': ValidationForm,
 };
 
 const currentPath = ref(window.location.hash);

@@ -20,7 +20,7 @@ function rightClick(event) {
 
 function click() {
 	state.value.clickPerformed = true;
-	state.value.clickType = 'Click';
+	state.value.clickType = 'Ordinary';
 }
 </script>
 

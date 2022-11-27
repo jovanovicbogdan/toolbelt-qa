@@ -31,7 +31,7 @@
 		<div class="col-sm-4">
 			<div class="card">
 				<div class="card-body">
-					<h5 class="card-title">Popup Windows</h5>
+					<h5 class="card-title">Popup Windows &amp; Frames</h5>
 					<p class="card-text">Handle Alerts, iFrames & Windows.</p>
 					<a href="#/popup" class="btn btn-dark">Practice</a>
 				</div>
@@ -51,7 +51,7 @@
 			<div class="card">
 				<div class="card-body">
 					<h5 class="card-title">Interactions</h5>
-					<p class="card-text">Interact with resizable, draggable, selectable, etc... components.</p>
+					<p class="card-text">Interact with sortable, selectable, resizable, droppable, and draggable UI components.</p>
 					<a href="#/interactions" class="btn btn-dark">Practice</a>
 				</div>
 			</div>
