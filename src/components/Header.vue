@@ -37,7 +37,7 @@
 						<a class="nav-link" href="#/interactions">Interactions</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#/student">Student System Application</a>
+						<a class="nav-link" href="#/student">Student Application</a>
 					</li>
 				</ul>
 			</div>
