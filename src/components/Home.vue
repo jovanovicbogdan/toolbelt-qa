@@ -31,9 +31,9 @@
 		<div class="col-sm-4">
 			<div class="card">
 				<div class="card-body">
-					<h5 class="card-title">Popup Windows &amp; Frames</h5>
-					<p class="card-text">Handle Alerts, iFrames & Windows.</p>
-					<a href="#/popup" class="btn btn-dark">Practice</a>
+					<h5 class="card-title">Popup Windows, DOM &amp; Frames</h5>
+					<p class="card-text">Handle Alerts, iFrames, DOM & Windows.</p>
+					<a href="#/popup/browser-windows" class="btn btn-dark">Practice</a>
 				</div>
 			</div>
 		</div>

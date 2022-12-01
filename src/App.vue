@@ -1,5 +1,6 @@
 <script setup>
 import { ref, computed } from 'vue';
+import SamplePage from './components/shared/SamplePage.vue';
 import BasicForm from './components/elements/BasicForm.vue';
 import Home from './components/Home.vue';
 import NotFound from './components/NotFound.vue';
@@ -12,9 +13,14 @@ import BrokenLinks from './components/elements/BrokenLinks.vue';
 import UploadAndDownload from './components/elements/UploadAndDownload.vue';
 import EventsAndAjax from './components/elements/EventsAndAjax.vue';
 import ValidationForm from './components/ValidationForm.vue';
+import BrowserWindows from './components/popup/BrowserWindows.vue';
+import Alerts from './components/popup/Alerts.vue';
+import Frames from './components/popup/Frames.vue';
+import ShadowDom from './components/popup/ShadowDom.vue';
 
 const routes = {
 	'/': Home,
+	'/sample': SamplePage,
 	'/elements/basic-form': BasicForm,
 	'/elements/radio-buttons': RadioButtons,
 	'/elements/web-tables': WebTables,
@@ -23,23 +29,23 @@ const routes = {
 	'/elements/data-transfer': UploadAndDownload,
 	'/elements/events-and-ajax': EventsAndAjax,
 	'/forms': ValidationForm,
+	'/popup/browser-windows': BrowserWindows,
+	'/popup/alerts': Alerts,
+	'/popup/frames': Frames,
+	'/popup/shadow-dom': ShadowDom,
 };
 
 const currentPath = ref(window.location.hash);
 
-window.addEventListener('hashchange', () => {
-	currentPath.value = window.location.hash;
-});
+window.addEventListener('hashchange', () => currentPath.value = window.location.hash);
 
-const currentView = computed(() => {
-	return routes[currentPath.value.slice(1) || '/'] || NotFound;
-});
+const currentView = computed(() => routes[currentPath.value.slice(1) || '/'] || NotFound);
 
 </script>
 
 <template>
 	<Header />
-	<main class="container flex-shrink-0" style="height: 80vh;">
+	<main class="container flex-shrink-0" style="height: 85vh;">
 		<component :is="currentView" />
 	</main>
 	<Footer />
