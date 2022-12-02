@@ -31,8 +31,8 @@
 		<div class="col-sm-4">
 			<div class="card">
 				<div class="card-body">
-					<h5 class="card-title">Popup Windows, DOM &amp; Frames</h5>
-					<p class="card-text">Handle Alerts, iFrames, DOM & Windows.</p>
+					<h5 class="card-title">Popup Windows &amp; Frames</h5>
+					<p class="card-text">Handle Alerts, iFrames & Windows.</p>
 					<a href="#/popup/browser-windows" class="btn btn-dark">Practice</a>
 				</div>
 			</div>
@@ -43,7 +43,7 @@
 				<div class="card-body">
 					<h5 class="card-title">Widgets</h5>
 					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-					<a href="#/widgets" class="btn btn-dark">Practice</a>
+					<a href="#/widgets/auto-complete" class="btn btn-dark">Practice</a>
 				</div>
 			</div>
 		</div>

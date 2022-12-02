@@ -16,7 +16,10 @@ import ValidationForm from './components/ValidationForm.vue';
 import BrowserWindows from './components/popup/BrowserWindows.vue';
 import Alerts from './components/popup/Alerts.vue';
 import Frames from './components/popup/Frames.vue';
-import ShadowDom from './components/popup/ShadowDom.vue';
+import AutoComplete from './components/widgets/AutoComplete.vue';
+import DatePicker from './components/widgets/DatePicker.vue';
+import ProgressBar from './components/widgets/ProgressBar.vue';
+import Tooltips from './components/widgets/Tooltips.vue';
 
 const routes = {
 	'/': Home,
@@ -32,7 +35,10 @@ const routes = {
 	'/popup/browser-windows': BrowserWindows,
 	'/popup/alerts': Alerts,
 	'/popup/frames': Frames,
-	'/popup/shadow-dom': ShadowDom,
+	'/widgets/auto-complete': AutoComplete,
+	'/widgets/date-picker': DatePicker,
+	'/widgets/progress-bar': ProgressBar,
+	'/widgets/tooltips': Tooltips,
 };
 
 const currentPath = ref(window.location.hash);

@@ -35,11 +35,18 @@
 							<li><a class="dropdown-item" href="#/popup/browser-windows">Browser Windows</a></li>
 							<li><a class="dropdown-item" href="#/popup/alerts">Alerts</a></li>
 							<li><a class="dropdown-item" href="#/popup/frames">Frames</a></li>
-							<li><a class="dropdown-item" href="#/popup/shadow-dom">Shadow DOM</a></li>
 						</ul>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#/widgets">Widgets</a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Widgets
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#/widgets/auto-complete">Auto Complete</a></li>
+							<li><a class="dropdown-item" href="#/widgets/date-picker">Date Picker</a></li>
+							<li><a class="dropdown-item" href="#/widgets/progress-bar">Progress Bar</a></li>
+							<li><a class="dropdown-item" href="#/widgets/tooltips">Tooltips</a></li>
+						</ul>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#/interactions">Interactions</a>

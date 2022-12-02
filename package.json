@@ -14,8 +14,11 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/vue-fontawesome": "^3.0.2",
     "@popperjs/core": "^2.11.6",
+    "@vueform/multiselect": "^2.5.7",
+    "@vuepic/vue-datepicker": "^3.6.0",
     "bootstrap": "^5.2.2",
     "jquery": "^3.6.1",
+    "lightvue": "^1.5.1",
     "vue": "^3.2.41"
   },
   "devDependencies": {
