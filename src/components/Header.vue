@@ -48,8 +48,15 @@
 							<li><a class="dropdown-item" href="#/widgets/tooltips">Tooltips</a></li>
 						</ul>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#/interactions">Interactions</a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Interactions
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#/interactions/drag-and-drop">Drag &amp; Drop</a></li>
+							<li><a class="dropdown-item" href="#/interactions/resizable">Resizable</a></li>
+							<li><a class="dropdown-item" href="#/interactions/sortable">Sortable</a></li>
+						</ul>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#/student">Student Application</a>

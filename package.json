@@ -19,7 +19,8 @@
     "bootstrap": "^5.2.2",
     "jquery": "^3.6.1",
     "lightvue": "^1.5.1",
-    "vue": "^3.2.41"
+    "vue": "^3.2.41",
+    "vuedraggable": "^4.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.1.2",

@@ -20,6 +20,9 @@ import AutoComplete from './components/widgets/AutoComplete.vue';
 import DatePicker from './components/widgets/DatePicker.vue';
 import ProgressBar from './components/widgets/ProgressBar.vue';
 import Tooltips from './components/widgets/Tooltips.vue';
+import DragAndDrop from './components/interactions/DragAndDrop.vue';
+import Resizable from './components/interactions/Resizable.vue';
+import Sortable from './components/interactions/Sortable.vue';
 
 const routes = {
 	'/': Home,
@@ -39,6 +42,9 @@ const routes = {
 	'/widgets/date-picker': DatePicker,
 	'/widgets/progress-bar': ProgressBar,
 	'/widgets/tooltips': Tooltips,
+	'/interactions/drag-and-drop': DragAndDrop,
+	'/interactions/resizable': Resizable,
+	'/interactions/sortable': Sortable,
 };
 
 const currentPath = ref(window.location.hash);

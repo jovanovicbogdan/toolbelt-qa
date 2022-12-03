@@ -52,7 +52,7 @@
 				<div class="card-body">
 					<h5 class="card-title">Interactions</h5>
 					<p class="card-text">Interact with sortable, selectable, resizable, droppable, and draggable UI components.</p>
-					<a href="#/interactions" class="btn btn-dark">Practice</a>
+					<a href="#/interactions/draggable" class="btn btn-dark">Practice</a>
 				</div>
 			</div>
 		</div>
