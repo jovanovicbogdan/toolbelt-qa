@@ -15,7 +15,7 @@
 						</a>
 						<ul class="dropdown-menu">
 							<li><a class="dropdown-item" href="#/elements/basic-form">Basic Form</a></li>
-							<li><a class="dropdown-item" href="#">Tree Browser</a></li>
+							<li><a class="dropdown-item" href="#/elements/checkbox-tree-browser">Checkbox Tree Browser</a></li>
 							<li><a class="dropdown-item" href="#/elements/radio-buttons">Radio Button</a></li>
 							<li><a class="dropdown-item" href="#/elements/web-tables">Web Tables</a></li>
 							<li><a class="dropdown-item" href="#/elements/buttons">Button Interactions</a></li>

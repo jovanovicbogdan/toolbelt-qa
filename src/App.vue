@@ -23,11 +23,13 @@ import Tooltips from './components/widgets/Tooltips.vue';
 import DragAndDrop from './components/interactions/DragAndDrop.vue';
 import Resizable from './components/interactions/Resizable.vue';
 import Sortable from './components/interactions/Sortable.vue';
+import CheckboxTreeBrowser from './components/elements/CheckboxTreeBrowser.vue';
 
 const routes = {
 	'/': Home,
 	'/sample': SamplePage,
 	'/elements/basic-form': BasicForm,
+	'/elements/checkbox-tree-browser': CheckboxTreeBrowser,
 	'/elements/radio-buttons': RadioButtons,
 	'/elements/web-tables': WebTables,
 	'/elements/buttons': Buttons,
@@ -57,7 +59,7 @@ const currentView = computed(() => routes[currentPath.value.slice(1) || '/'] || 
 
 <template>
 	<Header />
-	<main class="container flex-shrink-0" style="height: 85vh;">
+	<main class="container flex-shrink-0" style="height: 80vh;">
 		<component :is="currentView" />
 	</main>
 	<Footer />

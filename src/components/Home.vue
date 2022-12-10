@@ -2,10 +2,14 @@
 
 <template>
 	<div class="mb-5">
-		<div class="h-100 p-5 text-bg-dark rounded-3">
+		<!-- <div class="h-100 p-5 text-bg-dark rounded-3">
 			<h2>Must-Have QA Automation Skills</h2>
 			<p>The purpose of this web application is to provide the large set of web page interactions that are crucial to master when working with automation technologies such as Selenium, Playwright, Cypress, etc... Click on a button down below to see an example solution written in Java.</p>
 			<button class="btn btn-outline-light" type="button">Automation Framework</button>
+			</div> -->
+		<div class="h-100 p-5 text-bg-dark rounded-3">
+			<h2>Must-Have QA Automation Skills</h2>
+			<p>The purpose of this web application is to provide the large set of web page interactions that are crucial to master when working with automation technologies such as Selenium, Playwright, Cypress, etc...</p>
 		</div>
 	</div>
 	<h3>Choose a category you wish to practice</h3>

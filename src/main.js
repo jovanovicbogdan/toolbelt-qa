@@ -1,6 +1,7 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import JQuery from 'jquery';
+import naive from 'naive-ui';
 
 window.$ = JQuery;
 
@@ -24,5 +25,6 @@ import { faUserSecret, faPenToSquare, faTrash, faMagnifyingGlass, faPlus } from 
 library.add(faUserSecret, faPenToSquare, faTrash, faMagnifyingGlass, faPlus);
 
 createApp(App)
+	.use(naive)
 	.component('font-awesome-icon', FontAwesomeIcon)
 	.mount('#app');

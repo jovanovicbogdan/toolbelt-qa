@@ -59,7 +59,7 @@
 		"vue/html-comment-indent": ["error", "tab"],
 		"vue/object-curly-spacing": ["error", "always"],
 		"vue/space-infix-ops": ["error", { "int32Hint": true }],
-		"vue/no-undef-components": ["error", { "ignorePatterns": [] }],
+		"vue/no-undef-components": ["off", { "ignorePatterns": [] }],
 		"vue/mustache-interpolation-spacing": ["error", "always"],
 		"vue/prop-name-casing": ["error", "camelCase"],
 		"vue/attribute-hyphenation": ["error", "always", { "ignore": ["HTML"] }]
