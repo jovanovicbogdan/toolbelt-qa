@@ -1,6 +1,6 @@
 <script setup>
 function openNewTab() {
-	window.open('/', '_blank');
+	window.open('/toolbelt-qa', '_blank');
 }
 
 function openNewWindow() {

@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 import Multiselect from '@vueform/multiselect';
+import countriesUrl from '../../assets/countries.txt';
 
 const state = ref({
 	countries: [],
@@ -14,7 +15,7 @@ const state = ref({
 });
 
 onMounted(() => {
-	fetch('src/assets/countries.txt')
+	fetch(countriesUrl)
 		.then(res => res.text())
 		.then(data => state.value.countries = data.split('\n'));
 });
