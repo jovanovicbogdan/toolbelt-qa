@@ -1,8 +1,5 @@
 <script setup>
-import { onMounted } from 'vue';
 import imgUrl from '../../assets/rickroll.jpg';
-
-onMounted(() => document.querySelector('.img-thumbnail').src = imgUrl);
 </script>
 
 <template>
@@ -10,7 +7,7 @@ onMounted(() => document.querySelector('.img-thumbnail').src = imgUrl);
 
 	<div class="row mt-5">
 		<div class="col">
-			<img class="img-thumbnail" width="200" height="200" />
+			<img :src="imgUrl" class="img-thumbnail" width="200" height="200" />
 		</div>
 		<div class="col">
 			<img class="img-thumbnail" alt="Broken Image" />
