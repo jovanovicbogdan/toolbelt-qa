@@ -4,7 +4,7 @@ function openNewTab() {
 }
 
 function openNewWindow() {
-	window.open('/', '_blank', 'width=1024,height=720');
+	window.open('/toolbelt-qa', '_blank', 'width=1024,height=720');
 }
 
 function openNewWindowMessage() {

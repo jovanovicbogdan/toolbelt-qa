@@ -1,14 +1,19 @@
-<script setup></script>
+<script setup>
+import { onMounted } from 'vue';
+import imgUrl from '../../assets/rickroll.jpg';
+
+onMounted(() => document.querySelector('.img-thumbnail').src = imgUrl);
+</script>
 
 <template>
 	<h1>Broken Images and Links</h1>
 
 	<div class="row mt-5">
 		<div class="col">
-			<img :src="'src/assets/rickroll.jpg'" class="img-thumbnail" width="200" height="200" />
+			<img class="img-thumbnail" width="200" height="200" />
 		</div>
 		<div class="col">
-			<img :src="'src/assets/rickrolled.jpg'" class="img-thumbnail" alt="Broken Image" />
+			<img class="img-thumbnail" alt="Broken Image" />
 			<!-- <a href="https://the-internet.herokuapp.com/broken_images">Broken Images</a> -->
 		</div>
 		<div class="col">
