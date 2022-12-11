@@ -64,7 +64,7 @@
 		<div class="col-sm-4">
 			<div class="card">
 				<div class="card-body">
-					<h5 class="card-title">Student Application</h5>
+					<h5 class="card-title">Student Application [In Progress]</h5>
 					<p class="card-text">Login, register, list students, check student's profile, Student REST API and GraphQL.</p>
 					<a href="#/student" class="btn btn-dark">Practice</a>
 				</div>
